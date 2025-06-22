@@ -11,8 +11,8 @@ fn main() {
         process::exit(1);
     });
 
-    println!("Searching for {0}", config.query);
-    println!("In file {0}", config.file_path);
+    // println!("Searching for {0}", config.query);
+    // println!("In file {0}", config.file_path);
 
     if let Err(e) = minigrep::run(config) {
         println!("Application error: {e}");
